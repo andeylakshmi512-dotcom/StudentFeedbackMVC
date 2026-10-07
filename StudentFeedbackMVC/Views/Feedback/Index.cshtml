@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutView.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="ViewPort" Conent="width=device-width" />
+    <title>Feedback Form</title>
+</head>
+    <body>
+        @Html.Partial("_StudentInfo")
+        <div>
+            <p>
+                @Html.ActionLink("Give Feedback", "Create", "Feedback")
+            </p>
+            <p>
+                @Html.ActionLink("View Feedback", "List", "Feedback")
+            </p>
+        </div>
+    </body>
+
+</html>
